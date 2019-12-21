@@ -55,24 +55,35 @@ public class Lab2
     {Robot.makeDark();
         turnRight();
 
-        makeDark();
-        makeDark();
-        makeDark();
-        makeDark();
-        makeDark();
-        makeDark();
+        darkensix()
         Robot.turnLeft();
         Robot.turnLeft();
 
-        Robot.move();
-        Robot.move();
-        Robot.move();
-        Robot.move();
-        Robot.move();
-        Robot.move();
+        movesix()
         turnRight();
 
-
+//precondition: Robot is facing any direction
+    //postcondition: Robot is six squares forward in front of six darkened squares
+    public static void darkensix()
+    {
+        makeDark();
+        makeDark();
+        makeDark();
+        makeDark();
+        makeDark();
+        makeDark();
+    }
+    //precondition: Robot is facing any direction
+    //postcondition: Robot is six squares forward
+    public static void movesix()
+    {
+        Robot.move();
+        Robot.move();
+        Robot.move();
+        Robot.move();
+        Robot.move();
+        Robot.move();
+    }
     }
     //precondition: Robot is on any sqare with a light sqare in front
     //postcondition: Robot is on a now dark square that was previously light
