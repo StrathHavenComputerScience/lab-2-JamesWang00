@@ -98,8 +98,8 @@ public class Lab2
         Robot.turnLeft();
 
     }
-//precondition:
-//postcondition:
+//precondition: Robot is facing up on the bottom left corner of a undarkened 8 by 8 square.
+//postcondition: Robot is facing up on the top left corner of an checkered 8 by 8 square.
     public static void makeCheckered()
     {
         Robot.load("blank.txt");
