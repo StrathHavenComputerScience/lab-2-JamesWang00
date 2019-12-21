@@ -32,7 +32,8 @@ public class Lab2
         Robot.move ();
         Robot.turnLeft();
     }
-
+    //precondition: Robot is facing up with an undarkened row next to him and the comb undarkened
+    //postcondition: Robot is facing up on a darkened space with the entire comb darkened
     public static void darkenComb()
     {
         Robot.load("comb.txt");
